@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link href="../output.css" rel="stylesheet" />
+		<style>
+			.text-container {
+				max-height: 100px; /* Altura máxima que deseas para el texto */
+				overflow: hidden; /* Oculta el contenido que excede la altura máxima */
+			}
+		</style>
+		<title>recipe_card</title>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body
+		class="bg-gray-200 flex flex-wrap flex-col gap-4 justify-center items-center mt-4 md:flex-row">
+		<div class="w-72 bg-white shadow-md rounded-md">
+			<img
+				src="https://www.kolaboo.com/blog/wp-content/uploads/2020/12/comida-tipica-inglaterra-dinner-1288x724.jpg"
+				alt=""
+				class="w-full rounded-t-md" />
+			<div class="m-5">
+				<div class="flex justify-between">
+					<h2
+						class="mb-2 font-semibold text-gris-sazon pt-2">
+						Pasta a la carbonara
+						Past
+					</h2>
+
+					<!-- <img
+						src="/star.svg"
+						alt=""
+						class="w-6 ml-3" /> -->
+				</div>
+
+				<div class="text-container">
+					<!-- Contenedor del texto con altura máxima -->
+					<p
+						class="overflow-hidden text-sm text-gris-sazon">
+						Lorem, ipsum dolor
+						sit amet consectetur
+						adipisicing elit.
+						Doloribus doloremque
+						quisquam ipsa.
+						Deserunt, atque
+						omnis maiores ut,
+						voluptates veniam
+						sequi magnam nisi
+						saepe cumque neque
+						praesentium labore
+					</p>
+				</div>
+				<button
+					class="bg-amarillo-sazon p-2 mt-4 rounded-md text-negro-sazon w-full hover:opacity-85">
+					Ver receta
+				</button>
+			</div>
+		</div>
+	</body>
+</html>
