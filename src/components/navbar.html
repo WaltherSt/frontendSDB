@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
+		<!-- Metadatos del documento -->
 		<meta charset="UTF-8" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
+
+		<!-- Enlace al archivo de estilos CSS -->
 		<link href="../output.css" rel="stylesheet" />
+
+		<!-- Título de la página -->
 		<title>navBar</title>
+
+		<!-- Enlaces para cargar las fuentes de Google Fonts -->
 		<link
 			rel="preconnect"
 			href="https://fonts.googleapis.com" />
@@ -19,8 +26,11 @@
 			rel="stylesheet" />
 	</head>
 	<body class="">
+		<!-- Barra de navegación -->
 		<nav class="w-full bg-negro-sazon">
+			<!-- Contenedor principal de la barra de navegación -->
 			<div class="flex justify-between h-24">
+				<!-- Sección del logo -->
 				<div
 					class="flex ml-5 cursor-pointer h-20 pt-4">
 					<img
@@ -28,23 +38,29 @@
 						alt="" />
 				</div>
 
+				<!-- Sección de los enlaces de navegación -->
 				<div
 					class="flex justify-center items-center">
 					<ul class="flex p-5 gap-5">
+						<!-- Enlace a la página de inicio -->
 						<li
 							class="text-amarillo-sazon p-3 cursor-pointer hover:opacity-85 mt">
 							INICIO
 						</li>
+						<!-- Enlace a la página de recetas -->
 						<li
 							class="text-amarillo-sazon p-3 cursor-pointer hover:opacity-85">
 							RECETAS
 						</li>
+						<!-- Enlace a la página de configuración -->
 						<li
 							class="text-amarillo-sazon p-3 cursor-pointer hover:opacity-85">
 							CONFIGURACIÓN
 						</li>
 					</ul>
 				</div>
+
+				<!-- Sección de botones de inicio de sesión y registro -->
 				<div
 					class="flex gap-5 items-center mr-5">
 					<button

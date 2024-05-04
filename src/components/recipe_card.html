@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
+		<!-- Metadatos del documento -->
 		<meta charset="UTF-8" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
+
+		<!-- Enlace al archivo de estilos CSS -->
 		<link href="../output.css" rel="stylesheet" />
+
+		<!-- Estilos en línea -->
 		<style>
 			.text-container {
 				max-height: 100px; /* Altura máxima que deseas para el texto */
 				overflow: hidden; /* Oculta el contenido que excede la altura máxima */
 			}
 		</style>
+
+		<!-- Título de la página -->
 		<title>recipe_card</title>
+
+		<!-- Enlaces para cargar las fuentes de Google Fonts -->
 		<link
 			rel="preconnect"
 			href="https://fonts.googleapis.com" />
@@ -26,12 +35,17 @@
 	</head>
 	<body
 		class="bg-gray-200 flex flex-wrap flex-col gap-4 justify-center items-center mt-4 md:flex-row">
+		<!-- Contenedor principal -->
 		<div class="w-72 bg-white shadow-md rounded-md">
+			<!-- Imagen de la receta -->
 			<img
 				src="https://www.kolaboo.com/blog/wp-content/uploads/2020/12/comida-tipica-inglaterra-dinner-1288x724.jpg"
 				alt=""
 				class="w-full rounded-t-md" />
+
+			<!-- Contenido de la receta -->
 			<div class="m-5">
+				<!-- Título de la receta -->
 				<div class="flex justify-between">
 					<h2
 						class="mb-2 font-semibold text-gris-sazon pt-2">
@@ -39,14 +53,13 @@
 						Past
 					</h2>
 
-					<!-- <img
-						src="/star.svg"
-						alt=""
-						class="w-6 ml-3" /> -->
+					<!-- Icono de estrella (comentado) -->
+					<!-- <img src="/star.svg" alt="" class="w-6 ml-3" /> -->
 				</div>
 
+				<!-- Contenedor del texto con altura máxima -->
 				<div class="text-container">
-					<!-- Contenedor del texto con altura máxima -->
+					<!-- Descripción de la receta -->
 					<p
 						class="overflow-hidden text-sm text-gris-sazon">
 						Lorem, ipsum dolor
@@ -62,6 +75,8 @@
 						praesentium labore
 					</p>
 				</div>
+
+				<!-- Botón para ver la receta -->
 				<button
 					class="bg-amarillo-sazon p-2 mt-4 rounded-md text-negro-sazon w-full hover:opacity-85">
 					Ver receta
