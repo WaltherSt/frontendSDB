@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link href="../output.css" rel="stylesheet" />
+
+		<!-- Título de la página -->
+		<title>register</title>
+
+		<!-- Enlaces para cargar las fuentes de Google Fonts -->
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body class="flex justify-center items-center h-screen bg-gray-100">
+		<div class="w-96 p-7 shadow bg-white rounded-md">
+			<form action="" class="flex flex-col gap-3">
+				<div class="flex flex-col">
+					<label
+						for="name"
+						class="text-negro-sazon"
+						>Nombre</label
+					>
+					<input
+						class="border border-gray-100 rounded p-2 text-gray-600"
+						type="text"
+						placeholder="Fernando gonzales"
+						name="name" />
+				</div>
+
+				<div class="flex flex-col">
+					<label
+						for="email"
+						class="text-negro-sazon"
+						>Correo
+						electrónico</label
+					>
+					<input
+						class="border border-gray-100 rounded p-2 text-gray-600"
+						type="text"
+						placeholder="Fernando_gonzales@gmail.com"
+						name="email" />
+				</div>
+				<div class="flex flex-col">
+					<label
+						for="date"
+						class="text-negro-sazon"
+						>Fecha de
+						nacimiento</label
+					>
+					<input
+						class="border border-gray-100 rounded p-2 text-gray-600"
+						type="date"
+						name="date" />
+				</div>
+				<div class="flex flex-col">
+					<label
+						for="password"
+						class="text-negro-sazon"
+						>Contraseña</label
+					>
+					<input
+						class="border border-gray-100 rounded p-2 text-gray-600"
+						type="password"
+						name="password"
+						placeholder="Gg@_9po874" />
+				</div>
+
+				<button
+					class="p-3 bg-amarillo-sazon text-negro-sazon w-full mt-5 hover:opacity-90 rounded font-medium">
+					Crear
+				</button>
+			</form>
+		</div>
+	</body>
+</html>
