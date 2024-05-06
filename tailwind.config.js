@@ -6,7 +6,6 @@ module.exports = {
 			colors: {
 				"amarillo-sazon": "#f3c332",
 
-				// "amarillo-sazon": "#f3c332",1
 				// -----------------------------------------------------------
 				// "amarillo-sazon": {
 				// 	900: "#F2E0C9",
@@ -21,7 +20,6 @@ module.exports = {
 				// -------------------------------------------------------
 				"negro-sazon": "#0a0a0a",
 
-				// "negro-sazon": "#0a0a0a",1
 				// "negro-sazon": "#40322A",
 				// 	"negro-sazon": "#594736",3
 				// "negro-sazon": "#172601",4

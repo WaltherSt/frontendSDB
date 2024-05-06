@@ -704,16 +704,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-negro-sazon {
-  --tw-bg-opacity: 1;
-  background-color: rgb(10 10 10 / var(--tw-bg-opacity));
-}
-
-.bg-gray-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -776,17 +766,8 @@ video {
   font-weight: 600;
 }
 
-.font-normal {
-  font-weight: 400;
-}
-
 .capitalize {
   text-transform: capitalize;
-}
-
-.text-amarillo-sazon {
-  --tw-text-opacity: 1;
-  color: rgb(243 195 50 / var(--tw-text-opacity));
 }
 
 .text-gray-600 {
@@ -813,16 +794,6 @@ video {
 
 body {
   font-family: "Poppins", sans-serif;
-}
-
-.hover\:bg-amarillo-sazon:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 195 50 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-gray-50:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
 .hover\:opacity-80:hover {
@@ -855,10 +826,6 @@ body {
     background-color: rgb(10 10 10 / var(--tw-bg-opacity));
   }
 
-  .md\:bg-none {
-    background-image: none;
-  }
-
   .md\:font-medium {
     font-weight: 500;
   }
@@ -866,14 +833,6 @@ body {
   .md\:text-amarillo-sazon {
     --tw-text-opacity: 1;
     color: rgb(243 195 50 / var(--tw-text-opacity));
-  }
-
-  .md\:hover\:bg-transparent:hover {
-    background-color: transparent;
-  }
-
-  .md\:hover\:bg-none:hover {
-    background-image: none;
   }
 
   .md\:hover\:opacity-90:hover {
