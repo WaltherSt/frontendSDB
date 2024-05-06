@@ -4,13 +4,14 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				// "amarillo-sazon": "#f3c332",
+				"amarillo-sazon": "#f3c332",
+
 				// "amarillo-sazon": "#f3c332",1
 				// -----------------------------------------------------------
-				"amarillo-sazon": {
-					900: "#F2E0C9",
-					800: "#D5C5B1",
-				},
+				// "amarillo-sazon": {
+				// 	900: "#F2E0C9",
+				// 	800: "#D5C5B1",
+				// },
 				// ------------------------------------------------------------
 				// "amarillo-sazon": "#F2CC85", 3
 				// "amarillo-sazon": "#D9CA82",4
@@ -18,9 +19,10 @@ module.exports = {
 				// "amarillo-sazon": "#A0A603",6
 				// "amarillo-sazon": "#F2F2F2",7
 				// -------------------------------------------------------
-				// "negro-sazon": "#0a0a0a",
+				"negro-sazon": "#0a0a0a",
+
 				// "negro-sazon": "#0a0a0a",1
-				"negro-sazon": "#40322A",
+				// "negro-sazon": "#40322A",
 				// 	"negro-sazon": "#594736",3
 				// "negro-sazon": "#172601",4
 				// "negro-sazon": "#2B402C",5
