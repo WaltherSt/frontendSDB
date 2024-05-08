@@ -27,3 +27,11 @@ body {
 .card-text {
 	@apply flex flex-col content-around items-center w-1/2 justify-evenly;
 }
+ /* Recipe Register o registro de resetas */
+
+ .labels_inputs {
+	@apply flex flex-col my-2
+ }
+ .inputs {
+	@apply p-2 rounded-lg bg-gray-50 focus:outline-0 focus:bg-gray-100
+ }
