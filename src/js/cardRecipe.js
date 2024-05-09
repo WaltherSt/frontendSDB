@@ -1,59 +1,23 @@
-<!DOCTYPE html>
-<html lang="es">
-	<head>
-		<!-- Metadatos del documento -->
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
+const card = () => {
+	return `<div class="w-72 bg-white shadow-md rounded-md">
 
-		<!-- Enlace al archivo de estilos CSS -->
-		<link href="../output.css" rel="stylesheet" />
-
-		<!-- Estilos en línea -->
-		<style>
-			.text-container {
-				max-height: 100px; /* Altura máxima que deseas para el texto */
-				overflow: hidden; /* Oculta el contenido que excede la altura máxima */
-			}
-		</style>
-
-		<!-- Título de la página -->
-		<title>recipe_card</title>
-
-		<!-- Enlaces para cargar las fuentes de Google Fonts -->
-		<link
-			rel="preconnect"
-			href="https://fonts.googleapis.com" />
-		<link
-			rel="preconnect"
-			href="https://fonts.gstatic.com"
-			crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-			rel="stylesheet" />
-	</head>
-	<body
-		class="bg-gray-200 flex flex-wrap flex-col gap-4 justify-center items-center mt-4 md:flex-row">
-		<div class="w-72 bg-white shadow-md rounded-md">
-			<!-- Imagen de la receta -->
 			<img
 				src="https://images.pexels.com/photos/12557543/pexels-photo-12557543.jpeg"
 				class="w-full rounded-t-md h-44" />
 
-			<!-- Contenido de la receta -->
+
 			<div class="m-5">
-				<!-- Título de la receta -->
+
 				<div class="flex justify-between">
 					<h2
 						class="font-medium text-gris-sazon">
 						Pasta a la carbonara
 					</h2>
 
-					<!-- Icono de estrella (comentado) -->
+
 
 					<img
-						src="../resources/star.svg"
+						src="../src/resources/star.svg"
 						alt=""
 						class="w-5 cursor-pointer" />
 				</div>
@@ -64,7 +28,7 @@
 						class="flex gap-1 text-gray-400">
 						<img
 							class="w-4"
-							src="../resources/clock.svg"
+							src="../src/resources/clock.svg"
 							alt="" />
 						<span
 							class="text-[11px]"
@@ -76,7 +40,7 @@
 						class="flex gap-1 text-gray-400 cursor-pointer hover:opacity-80">
 						<img
 							class="w-4"
-							src="../resources/comment.svg"
+							src="../src/resources/comment.svg"
 							alt="" />
 						<span
 							class="text-[11px]"
@@ -86,9 +50,9 @@
 					</div>
 				</div>
 
-				<!-- Contenedor del texto con altura máxima -->
+		
 				<div class="text-container py-2">
-					<!-- Descripción de la receta -->
+		
 					<p
 						class="overflow-hidden text-[12px] text-gris-sazon">
 						Lorem, ipsum dolor
@@ -118,12 +82,21 @@
 					</p>
 				</div>
 
-				<!-- Botón para ver la receta -->
+
 				<button
 					class="bg-gray-100 p-3 mt-4 text-negro-sazon w-full hover:bg-amarillo-sazon hover:font-medium transition-colors text-xs uppercase rounded-sm">
 					continuar leyendo
 				</button>
 			</div>
-		</div>
-	</body>
-</html>
+		</div>`;
+};
+
+const cards = document.getElementById("cards");
+
+let htmlCards = ``;
+
+for (let index = 0; index < 13; index++) {
+	htmlCards += card();
+}
+
+cards.innerHTML = htmlCards;

@@ -1,14 +1,12 @@
-<!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
 		<link href="../output.css" rel="stylesheet" />
-		<title>Footer</title>
+		<title>recetas</title>
 		<link
 			rel="preconnect"
 			href="https://fonts.googleapis.com" />
@@ -21,24 +19,97 @@
 			rel="stylesheet" />
 	</head>
 	<body>
-		<footer class="bg-negro-sazon">
-			<div
-				class="flex justify-center ml-5 cursor-pointer pt-10 pb-10">
+		<nav
+			class="bg-white px-3 py-5 md:flex md:justify-around md:bg-negro-sazon md:py-8 fixed w-full top-0">
+			<section
+				class="flex justify-between mb-4 md:mb-0">
 				<img
 					src="/src/resources/logo_oficial.svg"
 					alt=""
-					class="h-14 cursor-pointer" />
+					class="w-28 md:w-40 cursor-pointer" />
+
+				<button class="md:hidden acordeon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-6 h-6 text-amarillo-sazon-900">
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+					</svg>
+				</button>
+			</section>
+
+			<div class="hidden md:block ocultar">
+				<section
+					class="flex flex-col w-full gap-1 capitalize text-negro-sazon md:flex-row md:items-center md:justify-center md:text-amarillo-sazon md:w-auto">
+					<a
+						href="#"
+						class="bg-gray-50 p-2 md:bg-transparent md:hover:opacity-90">
+						inicio
+					</a>
+
+					<a
+						href="#"
+						class="bg-gray-50 p-2 md:bg-transparent md:hover:opacity-90">
+						recetas
+					</a>
+					<a
+						href="#"
+						class="bg-gray-50 p-2 md:bg-transparent md:hover:opacity-90">
+						categorias
+					</a>
+					<a
+						href="#"
+						class="bg-gray-50 p-2 md:bg-transparent md:hover:opacity-90">
+						Niveles
+					</a>
+				</section>
 			</div>
+
+			<div class="hidden md:block ocultar">
+				<section
+					class="flex flex-col gap-1 mt-4 text-center capitalize text-negro-sazon md:flex-row md:gap-3 md:mt-0">
+					<a
+						href="#"
+						class="bg-amarillo-sazon p-2 hover:opacity-90 rounded">
+						iniciar sesión
+					</a>
+					<a
+						href="#"
+						class="bg-amarillo-sazon p-2 hover:opacity-90 rounded">
+						registrarse
+					</a>
+				</section>
+			</div>
+		</nav>
+
+		<section
+			id="cards"
+			class="flex justify-center mx-10 my-20 md:my-32 flex-wrap gap-10 items-center"></section>
+
+		<footer class="bg-amarillo-sazon">
 			<!-- Contenedor para contacto y redes sociales -->
-			<div
-				class="flex-row justify-around bg-amarillo-sazon px-4 md:flex">
+			<div class="flex-row justify-around px-4 md:flex">
+				<div
+					class="flex justify-center ml-5 cursor-pointer pt-10 pb-10">
+					<img
+						src="/src/resources/logo_oficial_negro.svg"
+						alt=""
+						class="w-36 md:w-40 cursor-pointer" />
+				</div>
 				<!-- Contenedor contacto -->
 				<div
 					class="flex-col text-center content-around py-5">
 					<h1 class="text-xl mb-3">
 						Contactenos
 					</h1>
-					<div class="flex gap-2">
+					<div
+						class="flex gap-2 justify-center">
 						<a
 							href="mailto:sazondebueno@gmail.com"
 							class="text-gray-500 hover:text-black hover:border-b-2 border-amarillo-sazon"
@@ -52,7 +123,8 @@
 					<h1 class="text-xl mb-3">
 						Nuestras redes
 					</h1>
-					<div class="flex gap-5">
+					<div
+						class="flex gap-5 justify-center">
 						<a
 							href="#"
 							class="hover:border-b-4 border-negro-sazon">
@@ -91,5 +163,18 @@
 			</div>
 			<!-- Fin contacto y redes sociales -->
 		</footer>
+
+		<script src="../js/cardRecipe.js"></script>
+		<script>
+			const item = document.querySelector(".acordeon");
+			const visibles =
+				document.querySelectorAll(".ocultar");
+
+			item.addEventListener("click", function () {
+				visibles.forEach((e) => {
+					e.classList.toggle("hidden");
+				});
+			});
+		</script>
 	</body>
 </html>
