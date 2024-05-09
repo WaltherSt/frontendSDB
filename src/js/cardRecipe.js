@@ -51,7 +51,7 @@ const card = () => {
 				</div>
 
 		
-				<div class="text-container py-2">
+				<div class="h-28 overflow-hidden py-2">
 		
 					<p
 						class="overflow-hidden text-[12px] text-gris-sazon">
@@ -67,18 +67,8 @@ const card = () => {
 						saepe cumque neque
 						praesentium labore
 						Lorem ipsum dolor
-						sit, amet
-						consectetur
-						adipisicing elit.
-						Placeat vero
-						doloribus dolorum,
-						debitis error fugit
-						nisi eos cupiditate
-						amet praesentium
-						ipsa rem ex dolor
-						nobis! Hic iste
-						incidunt magnam
-						deleniti.
+					
+					
 					</p>
 				</div>
 

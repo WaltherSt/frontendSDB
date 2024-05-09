@@ -3,6 +3,12 @@ module.exports = {
 	content: ["./src/**/*.{html,js}"],
 	theme: {
 		extend: {
+			backgroundImage: {
+				"image-form-in":
+					"url('/src/img/img_inicio_sesion.jpg')",
+				"image-1-login":
+					"url('/src/img/imagen_1_login.jpg')",
+			},
 			colors: {
 				"amarillo-sazon": "#f3c332",
 
