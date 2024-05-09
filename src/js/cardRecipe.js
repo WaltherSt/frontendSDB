@@ -1,5 +1,5 @@
 const card = () => {
-	return `<div class="w-72 bg-white shadow-md rounded-md">
+	return `<div class="w-72 bg-white shadow-md rounded-md cursor-pointer hover:shadow-lg transition-all">
 
 			<img
 				src="https://images.pexels.com/photos/12557543/pexels-photo-12557543.jpeg"
