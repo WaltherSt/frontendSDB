@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../output.css" rel="stylesheet" />
-    <title>Inicio de Sesión</title>
-    <link
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link href="../output.css" rel="stylesheet" />
+		<title>Inicio de Sesión</title>
+		<link
 			rel="preconnect"
 			href="https://fonts.googleapis.com" />
 		<link
@@ -15,35 +17,70 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 			rel="stylesheet" />
-</head>
-<body class="bg-gray-200 h-screen flex items-center justify-center">
-<!-- Contenedor principal -->
-    <div class="shadow-md rounded-lg bg-white justify-center w-[330px] text-sm">
-        <div class="rounded-t-md flex justify-center cursor-pointer py-5 bg-negro-sazon">
-            <img
-					src="/src/resources/logo_oficial.svg"
-					alt=""
-					class="w-28 cursor-pointer" />
-        </div>
-    <!-- Seccion de usuario, contrseña, boton de ingreso, crear cuenta y recuperar contraseña -->
-        <div class="p-7 bg-white rounded-md">
-            <div class="mt-2 flex flex-col gap-2">
-                <div class="flex flex-col">
-                    <label for="">Nombre de Usuario</label>
-                    <input type="email" class="border border-gray-100 bg-gray-100 focus:outline-0 focus:bg-gray-200 rounded p-2 text-gray-600">
-                </div>
-                <div class="flex flex-col">
-                    <label for="">Contraseña</label>
-                    <input type="password" class="border border-gray-100 bg-gray-100 focus:outline-0 focus:bg-gray-200 rounded p-2 text-gray-600">
-                </div>
-            </div>
-            <button class="mt-6 p-2 bg-negro-sazon text-amarillo-sazon w-full hover:opacity-80 rounded text-sm">Iniciar Sesión</button>
-            <div class="flex justify-between p-2 mt-6">
-                <a href="" class="hover:text-amarillo-sazon">Crear cuenta</a>
-                <a href="" class="hover:text-amarillo-sazon">Olvidé mi Contraseña</a>
-            </div>
-        </div>
-    </div>
-    
-</body>
+	</head>
+	<body>
+		<div
+			class="h-screen flex flex-col justify-center items-center">
+			<div class="w-full bg-amarillo-sazon h-1/2"></div>
+			<div class="w-full bg-negro-sazon h-1/2"></div>
+
+			<div
+				class="shadow-md rounded-lg bg-white justify-center w-[330px] text-sm absolute">
+				<div
+					class="rounded-t-md flex justify-center cursor-pointer py-5 bg-negro-sazon">
+					<img
+						src="/src/resources/logo_oficial.svg"
+						alt=""
+						class="w-28 cursor-pointer" />
+				</div>
+
+				<div class="p-7 bg-white rounded-md">
+					<div
+						class="mt-2 flex flex-col gap-2">
+						<div
+							class="flex flex-col">
+							<label
+								for=""
+								>Nombre
+								de
+								Usuario</label
+							>
+							<input
+								type="email"
+								class="border border-gray-100 bg-gray-100 focus:outline-0 focus:bg-gray-200 rounded p-2 text-gray-600" />
+						</div>
+						<div
+							class="flex flex-col">
+							<label
+								for=""
+								>Contraseña</label
+							>
+							<input
+								type="password"
+								class="border border-gray-100 bg-gray-100 focus:outline-0 focus:bg-gray-200 rounded p-2 text-gray-600" />
+						</div>
+					</div>
+					<button
+						class="mt-6 p-2 bg-amarillo-sazon w-full hover:opacity-80 rounded text-sm text-negro-sazon">
+						Iniciar Sesión
+					</button>
+					<div
+						class="flex justify-between p-2">
+						<a
+							href=""
+							class="hover:text-gray-600 text-[12px]"
+							>Crear
+							cuenta</a
+						>
+						<a
+							href=""
+							class="hover:text-gray-600 text-[12px]"
+							>Olvidé mi
+							Contraseña</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
