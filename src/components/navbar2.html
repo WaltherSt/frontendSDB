@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
+		<!-- Metadatos del documento -->
 		<meta charset="UTF-8" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
-		<link href="../src/output.css" rel="stylesheet" />
-		<title>recetas</title>
+
+		<!-- Enlace al archivo de estilos CSS -->
+		<link href="../output.css" rel="stylesheet" />
+
+		<!-- Título de la página -->
+		<title>navBar</title>
+
+		<!-- Enlaces para cargar las fuentes de Google Fonts -->
 		<link
 			rel="preconnect"
 			href="https://fonts.googleapis.com" />
@@ -20,13 +27,13 @@
 	</head>
 	<body>
 		<nav
-			class="bg-white px-3 py-5 md:flex md:justify-around md:bg-negro-sazon md:py-8 fixed w-full top-0">
+			class="p-3 md:flex md:justify-around md:bg-negro-sazon md:py-8">
 			<section
 				class="flex justify-between mb-4 md:mb-0">
 				<img
 					src="/src/resources/logo_oficial.svg"
 					alt=""
-					class="w-28 md:w-36 cursor-pointer" />
+					class="w-28 cursor-pointer" />
 
 				<button class="md:hidden acordeon">
 					<svg
@@ -75,12 +82,12 @@
 				<section
 					class="flex flex-col gap-1 mt-4 text-center capitalize text-negro-sazon md:flex-row md:gap-3 md:mt-0">
 					<a
-						href="../src/components/Log_In.html"
+						href="#"
 						class="bg-amarillo-sazon p-2 hover:opacity-90 rounded">
 						iniciar sesión
 					</a>
 					<a
-						href="../src/components/register.html"
+						href="#"
 						class="bg-amarillo-sazon p-2 hover:opacity-90 rounded">
 						registrarse
 					</a>
@@ -88,71 +95,6 @@
 			</div>
 		</nav>
 
-		<section
-			id="cards"
-			class="flex justify-center mx-10 my-24 md:my-32 flex-wrap gap-10 items-center"></section>
-
-		<footer class="bg-amarillo-sazon">
-			<!-- Contenedor para contacto y redes sociales -->
-			<div class="flex-row justify-around px-4 md:flex">
-				<div
-					class="flex justify-center ml-5 cursor-pointer pt-10 pb-10">
-					<img
-						src="/src/resources/logo_oficial_negro.svg"
-						alt=""
-						class="w-36 md:w-40 cursor-pointer" />
-				</div>
-				<!-- Contenedor contacto -->
-				<div
-					class="flex-col text-center content-around py-5 border-t border-white md:border-none">
-					<h1 class="text-xl mb-3">
-						Contactenos
-					</h1>
-					<div
-						class="flex gap-2 justify-center">
-						<a
-							href="mailto:sazondebueno@gmail.com"
-							class="text-gray-500 hover:text-black hover:border-b-2 border-amarillo-sazon"
-							>sazondebueno@gmail.com</a
-						>
-					</div>
-				</div>
-				<!-- Contenedor redes sociales -->
-				<div
-					class="flex-col text-center justify-center items-center py-5">
-					<h1 class="text-xl mb-3">
-						Nuestras redes
-					</h1>
-					<div
-						class="flex gap-1 justify-center items-center">
-						<a
-							href=""
-							class="hover:border-b-4 border-negro-sazon w-12 md:w-[59px]">
-							<img
-								src="../src/resources/whatsapp.svg"
-								alt="" />
-						</a>
-						<a
-							href="#"
-							class="hover:border-b-4 border-negro-sazon w-10 md:w-[50px]">
-							<img
-								src="../src/resources/facebook2.svg"
-								alt="" />
-						</a>
-						<a
-							href=""
-							class="hover:border-b-4 border-negro-sazon w-10 md:w-[50px] ml-1">
-							<img
-								src="../src//resources/instagram2.svg"
-								alt="" />
-						</a>
-					</div>
-				</div>
-			</div>
-			<!-- Fin contacto y redes sociales -->
-		</footer>
-
-		<script src="../src/js/cardRecipe.js"></script>
 		<script>
 			const item = document.querySelector(".acordeon");
 			const visibles =
