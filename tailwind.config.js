@@ -24,6 +24,7 @@ module.exports = {
 			},
 			colors: {
 				"amarillo-sazon": "#f3c332",
+				"amarillo-sazon-2":"#dbb130",
 
 				// -----------------------------------------------------------
 				// "amarillo-sazon": {
