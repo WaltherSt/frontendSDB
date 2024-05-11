@@ -71,12 +71,16 @@ const card = () => {
 					
 					</p>
 				</div>
-
-
-				<button
+				<a 	href="/src/components/Recipe_view.html">
+						<button
+				
 					class="bg-gray-100 p-3 mt-4 text-negro-sazon w-full hover:bg-amarillo-sazon hover:font-medium transition-colors text-xs uppercase rounded-sm">
 					continuar leyendo
 				</button>
+				</>
+
+
+		
 			</div>
 		</div>`;
 };
