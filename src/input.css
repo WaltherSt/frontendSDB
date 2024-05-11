@@ -9,25 +9,27 @@ body {
 /*----------------------Recipe Interface-----------------------------*/
 
 .accordion-header {
-	@apply text-lg rounded bg-amarillo-sazon p-3 cursor-pointer shadow-sm;
+
+	@apply text-lg rounded-lg bg-amarillo-sazon p-3 cursor-pointer shadow-sm;
+
 }
 
 .card-body {
-	@apply mx-3 rounded-b-2xl py-3 grid sm:grid-cols-2 xl:grid-cols-3  2xl:grid-cols-4 bg-white shadow-lg gap-3;
+	@apply mx-3 rounded-b-2xl py-3 grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3  2xl:grid-cols-4 bg-gray-50 shadow-lg gap-3; 
 }
 
 .card {
-	@apply w-auto h-40  rounded-xl flex flex-row content-between m-3 shadow-lg;
+	@apply  w-auto h-auto sm:h-52 rounded-xl flex flex-col sm:flex-row  content-between m-3 shadow-lg;
 }
 
 .card img {
-	@apply rounded-l-xl w-1/2;
+	@apply w-full h-52 sm:w-40 sm:h-full  rounded-t-xl sm:rounded-l-xl sm:rounded-tr-none ;
 }
 
 .card-text {
-	@apply flex flex-col content-around items-center w-1/2 justify-evenly;
+	@apply mt-3 pb-3 sm:mt-0 flex flex-col content-around items-center w-full justify-evenly;
 }
-/* Recipe Register o registro de resetas */
+
 
 .labels_inputs {
 	@apply flex flex-col my-2;
