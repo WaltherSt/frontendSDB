@@ -8,6 +8,8 @@ module.exports = {
 					"url('/src/img/img_inicio_sesion.jpg')",
 				"image-1-login":
 					"url('/src/img/imagen_1_login.jpg')",
+				"image-primary":
+					"url('/src/img/img_inicio.jpg')",
 			},
 			colors: {
 				"amarillo-sazon": "#f3c332",
