@@ -17,7 +17,7 @@ const card = () => {
 
 
 					<img
-						src="../src/resources/star.svg"
+						src="../resources/star.svg"
 						alt=""
 						class="w-5 cursor-pointer" />
 				</div>
@@ -28,7 +28,7 @@ const card = () => {
 						class="flex gap-1 text-gray-400">
 						<img
 							class="w-4"
-							src="../src/resources/clock.svg"
+							src="../resources/clock.svg"
 							alt="" />
 						<span
 							class="text-[11px]"
@@ -40,7 +40,7 @@ const card = () => {
 						class="flex gap-1 text-gray-400 cursor-pointer hover:opacity-80">
 						<img
 							class="w-4"
-							src="../src/resources/comment.svg"
+							src="../resources/comment.svg"
 							alt="" />
 						<span
 							class="text-[11px]"
